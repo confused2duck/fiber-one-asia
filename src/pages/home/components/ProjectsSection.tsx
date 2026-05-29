@@ -1,0 +1,2 @@
+import { projectsHighlights } from "@/mocks/home";
+export default function ProjectsSection() { return <section className="py-16 bg-primary px-4"><div className="max-w-6xl mx-auto"><h2 className="text-3xl font-bold mb-8">Projects</h2><div className="grid gap-5 md:grid-cols-3">{projectsHighlights.map((item) => <div key={item.id} className="p-5 bg-white/40 rounded-xl"><h3 className="font-bold">{item.title}</h3><p className="text-sm text-accent">{item.location}</p><p className="text-sm text-gray-700 mt-2">{item.description}</p></div>)}</div></div></section>; }

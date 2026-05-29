@@ -1,0 +1,2 @@
+import { stats } from "@/mocks/home";
+export default function StatsSection() { return <section className="py-10 bg-white"><div className="max-w-6xl mx-auto px-4 grid gap-4 md:grid-cols-4">{stats.map((item) => <div key={item.title} className="p-5 rounded-xl bg-gray-50 text-center"><i className={`${item.icon} text-3xl text-accent`} /><p className="mt-2 text-sm font-bold">{item.title}</p></div>)}</div></section>; }

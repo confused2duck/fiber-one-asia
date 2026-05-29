@@ -1,0 +1,2 @@
+import { whyWorkWithUs } from "@/mocks/home";
+export default function WhyWorkWithUsSection() { return <section className="py-16 px-4"><div className="max-w-6xl mx-auto"><h2 className="text-3xl font-bold mb-8">Why Work With Us</h2><div className="grid gap-5 md:grid-cols-2">{whyWorkWithUs.map((item) => <div key={item.title} className="p-5 rounded-xl bg-gray-50 border"><h3 className="font-bold">{item.title}</h3><p className="text-sm text-gray-600 mt-2">{item.text}</p></div>)}</div></div></section>; }

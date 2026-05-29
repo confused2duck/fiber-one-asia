@@ -1,0 +1,2 @@
+import { faqs } from "@/mocks/home";
+export default function FAQSection() { return <section className="py-16 px-4"><div className="max-w-4xl mx-auto"><h2 className="text-3xl font-bold mb-8">FAQ</h2><div className="space-y-4">{faqs.map((faq) => <details key={faq.question} className="p-4 border rounded-xl"><summary className="font-semibold cursor-pointer">{faq.question}</summary><p className="text-sm text-gray-600 mt-3">{faq.answer}</p></details>)}</div></div></section>; }

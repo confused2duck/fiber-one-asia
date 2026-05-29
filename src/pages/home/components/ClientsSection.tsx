@@ -1,0 +1,2 @@
+import { clientLogos } from "@/mocks/home";
+export default function ClientsSection() { return <section className="py-12 bg-gray-50 px-4"><div className="max-w-6xl mx-auto grid gap-4 grid-cols-2 md:grid-cols-4">{clientLogos.map((client) => <div key={client.name} className="p-4 bg-white border rounded-xl text-center"><div className="font-bold text-accent text-xl">{client.initial}</div><p className="text-xs text-gray-600 mt-1">{client.name}</p></div>)}</div></section>; }

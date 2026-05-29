@@ -1,0 +1,2 @@
+import { heroSlides } from "@/mocks/home";
+export default function HeroSlider() { const slide = heroSlides[0]; return <section className="pt-28 min-h-[620px] bg-primary grid items-center px-4"><div className="max-w-6xl mx-auto grid gap-8 md:grid-cols-2 items-center"><div><h1 className="text-4xl md:text-6xl font-bold text-gray-900">{slide.title}</h1><p className="mt-5 text-gray-700 text-lg">{slide.description}</p></div><img src={slide.image} alt={slide.title} className="rounded-xl w-full aspect-video object-cover" /></div></section>; }

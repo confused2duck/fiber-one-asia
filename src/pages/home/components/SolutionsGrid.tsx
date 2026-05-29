@@ -1,0 +1,3 @@
+import { Link } from "react-router-dom";
+import { solutionsGrid } from "@/mocks/home";
+export default function SolutionsGrid() { return <section className="py-16 bg-gray-50 px-4"><div className="max-w-7xl mx-auto"><h2 className="text-3xl font-bold text-center mb-10">Solutions</h2><div className="grid gap-5 md:grid-cols-3">{solutionsGrid.map((item) => <Link key={item.id} to="/solutions" className="p-5 bg-white rounded-xl border"><img src={item.image} alt={item.title} className="rounded-lg aspect-video object-cover w-full" /><h3 className="font-bold mt-4">{item.title}</h3><p className="text-sm text-gray-600 mt-2">{item.description}</p></Link>)}</div></div></section>; }

@@ -1,0 +1,2 @@
+import { coreCompetencies } from "@/mocks/home";
+export default function CoreCompetenciesSection() { return <section className="py-16 px-4 bg-gray-50"><div className="max-w-6xl mx-auto grid gap-4 md:grid-cols-3">{coreCompetencies.map((item) => <div key={item.title} className="p-5 bg-white rounded-xl border"><i className={`${item.icon} text-accent text-2xl`} /><h3 className="font-bold mt-3">{item.title}</h3></div>)}</div></section>; }
